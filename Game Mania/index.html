@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+        defer></script>
 </head>
 
 <body>
     <header>
-        <div class="alinhamento">
-            <div class="cabeçalho">
-                <img src="img/logo.svg" alt="Logo da loja Game Mania">
-            </div>
+        <div class="alinhamento cabeçalho">
+            <img src="img/logo.svg" alt="Logo da loja Game Mania">
         </div>
     </header>
+
     <div class="barra">
-        <div class="barraDeBusca">
+        <div class="alinhamento barraDeBusca">
             <div class="icons">
-                <img src="img/usuario.svg" class="usuario">
+                <a href=""> <img src="img/usuario.svg" class="usuario"> </a>
                 <form>
                     <input type="search" placeholder="Buscar" class="Buscar">
                 </form>
-                <img src="img/carrinho.svg" class="carrinho">
+                <a href=""> <img src="img/carrinho.svg" class="carrinho"> </a>
             </div>
         </div>
     </div>
-    <div class="alinhamentoMenu">
-        <div class="nav">
+
+    <section class="menu">
+        <div class="alinhamento">
             <nav>
                 <a href="">Lançamentos</a>
                 <a href="">Produtos</a>
@@ -39,7 +44,27 @@
                 <a href="">Contato</a>
             </nav>
         </div>
-    </div>
+    </section>
+
+    <section class="banner">
+        <div class="alinhamento conteudo-banner">
+            <a href=""><img src="img/Banner.svg"></a>
+        </div>
+    </section>
+
+    <section class="marcas">
+        <div class="alinhamento">
+            <div class="container d-flex justify-content-around align-items-center
+                posicionamento-marcas">
+                <a href=""><img src="img/apple.svg" alt="Apple"> </a>
+                <a href=""><img src="img/dell.svg" alt="Dell"></a>
+                <a href=""><img src="img/nintendo.svg" alt="Nintendo"></a>
+                <a href=""><img src="img/ps5.svg" alt="PlayStation 5"> </a>
+                <a href=""><img src="img/sony.svg" alt="Sony"></a>
+                <a href=""><img src="img/xbox.svg" alt="Xbox"></a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

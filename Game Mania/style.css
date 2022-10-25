@@ -15,6 +15,11 @@ header {
     flex-direction: column;
 }
 
+.alinhamento {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .cabeçalho {
     height: 85px;
     margin: 0 auto;
@@ -24,19 +29,11 @@ header {
     height: 100%;
 }
 
-.alinhamento {
-    width: 1200px;
-    margin: 0 auto;
-    height: 85px;
-}
-
 .barra {
-
     background-color: #1B1B31;
 }
 
 .barraDeBusca {
-    width: 1200px;
     height: 60px;
     margin: auto;
     display: flex;
@@ -72,12 +69,18 @@ input {
 }
 
 .menu {
-    height: 20px;
-    width: 1200px;
+    background-color: #1B1B31;
 }
 
-.alinhamentoMenu {
-    background-color: #1B1B31;
+nav {
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 a {
@@ -85,24 +88,32 @@ a {
     text-decoration: none;
 }
 
-nav {
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1000px;
-    text-align: center;
-}
-
-.nav {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-content: center;
-}
-
 .promoções {
     color: #d60a0a;
+}
+
+.banner {
+    height: 484px;
+    background-color: #D4D4C5;
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.marcas {
+    height: 50px;
+    background-color: #b6b6a5;
+}
+
+.posicionamento-marcas {
+    height: 100%;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
 }
