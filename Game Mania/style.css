@@ -117,3 +117,32 @@ a {
 .container {
     max-width: 1200px;
 }
+
+.conteudo {
+
+    background-color: #1B1B31;
+    height: 344px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.divisao {
+    background-color: #D4D4C5;
+    height: 50px;
+}
+
+footer {
+    background-color: #1B1B31;
+    height: 346px;
+
+}
