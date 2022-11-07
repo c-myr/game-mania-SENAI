@@ -12,12 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer></script>
+    <script src="js/jquery-3.6.1.js" defer></script>
+    <script src="js/script.js" defer> </script>
 </head>
 
 <body>
     <header>
         <div class="alinhamento cabeçalho">
-            <img src="img/logo.svg" alt="Logo da loja Game Mania">
+            <a href="index.html"><img src="img/logo.svg" alt="Logo da loja Game Mania"></a>
         </div>
     </header>
 
@@ -25,9 +27,16 @@
         <div class="alinhamento barraDeBusca">
             <div class="icons">
                 <a href=""> <img src="img/usuario.svg" class="usuario"> </a>
-                <form>
-                    <input type="search" placeholder="Buscar" class="Buscar">
+                <form action="">
+                    <div class="barraDeBusca">
+                        <input id="buscar" type="text" placeholder="Buscar">
+                        <button onclick="buscarItens()"><img src="img/Lupa.svg"></button>
+                    </div>
                 </form>
+                <a href="" onclick="mostrarMenu(event)" id="hamburguer" class="hamburguer">
+                    <img src="img/menu.svg" alt="icone do menu hamburguer">
+                </a>
+
                 <a href=""> <img src="img/carrinho.svg" class="carrinho"> </a>
             </div>
         </div>
@@ -35,7 +44,7 @@
 
     <section class="menu">
         <div class="alinhamento">
-            <nav>
+            <nav id="nav" class="nav">
                 <a href="">Lançamentos</a>
                 <a href="">Produtos</a>
                 <a href="">Mais vendidos</a>
@@ -43,12 +52,15 @@
                 <a href="" class="promoções">Promoções</a>
                 <a href="">Contato</a>
             </nav>
+
         </div>
     </section>
 
-    <section class="banner">
-        <div class="alinhamento conteudo-banner">
-            <a href=""><img src="img/Banner.svg"></a>
+    <section class="fundo-banner">
+        <div class="alinhamento"> <a href="">
+                <div class="banner">
+                </div>
+            </a>
         </div>
     </section>
 
@@ -69,10 +81,10 @@
     <section class="conteudo">
         <div class="alinhamento">
             <div class="produtos">
-                <a href=""> <img src="img/card1.svg" alt="categoria eletrônicos"></a>
-                <a href=""> <img src="img/card2.svg" alt="categoria jogos"></a>
-                <a href=""> <img src="img/card3.svg" alt="categoria capinhas de celular"></a>
-                <a href=""> <img src="img/card4.svg" alt="categoria pc gamer"></a>
+                <a class="card1" href=""> <img src="img/card1.svg" alt="categoria eletrônicos"></a>
+                <a class="card2" href=""> <img src="img/card2.svg" alt="categoria jogos"></a>
+                <a class="card3" href=""> <img src="img/card3.svg" alt="categoria capinhas de celular"></a>
+                <a class="card4" href=""> <img src="img/card4.svg" alt="categoria pc gamer"></a>
             </div>
         </div>
 
@@ -82,8 +94,51 @@
 
     <footer>
         <div class="alinhamento">
+            <div class="lugarfooter">
+                <div class="titulos">
+                    Sobre nós
+                    <div class="conteudos">
+                        <a href="#">Missão e visão</a>
+                        <a href="#">Políticas de venda</a>
+                        <a href="#">Políticas de troca</a>
+                        <a href="#">Assistência Técnica</a>
+                        <a href="#">Institucional</a>
+                        <a href="#">SAC</a>
+                    </div>
+                </div>
+                <div class="titulos">
+                    Contato
+                    <div class="conteudos">
+                        <a href="#">gamemanialoja@email.com</a>
+                        <a href="#">(11)xxxx-xxxx</a>
+                        <a href="#">(11)xxxx-xxxx</a>
+                        <hr>
+                        Horário de atendimento: <br>
+                        de seg a sex de 09h às 17h.
+                    </div>
+                </div>
+                <div class="titulos">
+                    Formas de Pagamento
+                    <div class="conteudos">
+                        <img src="img/cartoes.svg">
+                        <div class="titulos2">
+                            Siga-nos em nossas redes sociais: <br>
+                            <div class="icones-redes-sociais">
+                                <a href="#"><img src="img/icone face 1.svg"></a>
+                                <a href="#"><img src="img/icone insta 1.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulos3">
+                    Cadastre-se em nossa newsletter!
+                    <form>
+                        <input id="cadastro" type="email" placeholder="E-mail">
+                        <button onclick="inscrever()">enviar</button>
 
-        </div>
+                    </form>
+                </div>
+            </div>
     </footer>
 </body>
 
