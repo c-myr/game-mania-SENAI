@@ -110,14 +110,40 @@ a {
     color: #d60a0a;
 }
 
+#carrossel {
+    height: 576px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .banner {
     height: 459px;
-    background-position: center;
+}
+
+
+
+.banner-1 {
+    background-image: url(img/bannersale.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(img/bannersale.jpg);
-    display: flex;
-    justify-content: center, right;
+    background-position: center;
+}
+
+.banner-2 {
+    background-image: url(img/banner-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.banner-3 {
+    background-image: url(img/banner-3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
 }
 
 .sale {
