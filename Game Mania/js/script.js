@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     let slideAtual = 1
     let listaSlides = ["banner-1", "banner-2", "banner-3"]
 
@@ -52,3 +53,5 @@ function inscrever() {
     let inscrever = document.getElementById("cadastro").value
     alert(inscrever)
 }
+
+

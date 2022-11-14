@@ -122,7 +122,13 @@ a {
     height: 459px;
 }
 
-
+.click-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 459px;
+    width: 888px;
+}
 
 .banner-1 {
     background-image: url(img/bannersale.svg);
