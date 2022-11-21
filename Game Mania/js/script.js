@@ -26,6 +26,9 @@ $(document).ready(function () {
             slideAtual = 0
         }
     }
+    $("#enviar").click(function () {
+        alert("login funcionando :)")
+    })
 })
 
 
@@ -53,5 +56,4 @@ function inscrever() {
     let inscrever = document.getElementById("cadastro").value
     alert(inscrever)
 }
-
 
